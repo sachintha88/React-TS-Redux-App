@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is a template for Typescript powered, redux equiped, React application template supported by eslint and other basic rules
 
 ## What's new
-we have added following tools/libraries to this project\
+we have added following tools/libraries to this project
 
 ```
    npx create-react-app React-TS-Redux-App --template typescript
@@ -21,8 +21,8 @@ we have added following tools/libraries to this project\
 Therefore, this application is basically equipped with `React`, `TypeScript`, `Redux and Redux-Thunk`, `Redux-ToolKit`, `SASS`, `ESLint and Prettier plugin`
 
 ### Wiring: 
-Application is wired with `Redux` and Equipped with a reducer to use localized strings in the application
-Most of the unnecessary Images, Comments, CSS files and Elements have been romoved that are originally available with create-react-app
+Application is wired with `Redux` and Equipped with a `reducer` and a `selector`(custom hook) to use localized strings in the application. 
+Most of the unnecessary Images, Comments, CSS files and Elements have been romoved that are originally available with create-react-app.
 
 `Components` folder is already set up where you can start adding components of your project
 
