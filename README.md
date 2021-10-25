@@ -1,10 +1,45 @@
-# Getting Started with Create React App
+# Getting Started with React-TS-Redux-App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# What is it
+This is a template for Typescript powered, redux equiped, React application template supported by eslint and other basic rules
+
+## What's new
+we have added following tools/libraries to this project\
+
+```
+   npx create-react-app React-TS-Redux-App --template typescript
+   npm install redux
+   npm install redux-thunk
+   npm install @reduxjs/toolkit react-redux
+   npm install -g sass
+   npm install --save-dev eslint@7.32.0
+   npm install --save-dev eslint-plugin-prettier
+   npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+Therefore, this application is basically equipped with `React`, `TypeScript`, `Redux and Redux-Thunk`, `Redux-ToolKit`, `SASS`, `ESLint and Prettier plugin`
+
+### Wiring: 
+Application is wired with `Redux` and Equipped with a reducer to use localized strings in the application
+Most of the unnecessary Images, Comments, CSS files and Elements have been romoved that are originally available with create-react-app
+
+`Components` folder is already set up where you can start adding components of your project
+
+Language resource `en.json` is available In the `Language` folder, where you can add new localized language preferences there.
+For example, `"my_language_key": English {0}` is a valid entry for en.json and you can access this value by calling `useMessageBundle` function in the `Language/selector.ts`
+
+Example: `<div>{useMessageBundle("my_language_key", [(US)])}</div> would result in English (US)` 
+Example also provide in the code @ `App.tsx`
+
+in `combiner.ts` file you can combine all your reducers to one reducer that is `rootReducer` and use this `rootReducer` to wire the application with `reduxMiddleware` @ `store.ts`
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+Install all uninstalled modules that are listed in package.json
 
 ### `npm start`
 

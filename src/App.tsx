@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      {useMessageBundle("browser_title")}
+      {useMessageBundle("page_title")}
     </div>
   );
 }
